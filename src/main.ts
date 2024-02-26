@@ -3,11 +3,8 @@ import { AppModule } from './app.module';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { ValidationPipe } from '@nestjs/common';
 import * as dotenv from 'dotenv';
-// import * as session from 'express-session';
 import * as cookieParser from 'cookie-parser';
-// import * as express from 'express';
 import { TransformInterceptor } from './common/interceptors/responseData';
-// import { HttpExceptionFilter } from './common/decorators/http.exceptions';
 
 async function bootstrap() {
   dotenv.config();
